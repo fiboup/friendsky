@@ -1,0 +1,20 @@
+{
+  "name": "friendsky",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "test": "turbo run test",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.15"
+  }
+}
